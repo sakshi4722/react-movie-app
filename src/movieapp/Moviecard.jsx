@@ -4,7 +4,7 @@ const MovieCard = ({ data }) => {
   const IMG_PATH = "https://image.tmdb.org/t/p/w1280";
   return (
       
-              <div className="container">
+              <div className="container" key={data.id}>
                 <div className="imagediv">
                   <img width="300px" src={IMG_PATH + data.poster_path} alt="" />
                 
